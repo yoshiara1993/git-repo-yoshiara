@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: HogeHoge
+  version: 1.0.0
+paths:
+  /hoge:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                foo:
+                  type: string
+                  example: "foo!"
+                bar:
+                  type: integer
+                  example: 10
+      responses:
+        "200":
+          description: ok
